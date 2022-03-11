@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Site</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p> Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mascu" checked>
+                <label for="mascu">Masculino</label>
+                <input type="radio" name="radsex" id="femin">
+                <label for="femin">Feminino</label>
+            </p>
+            <p>
+                <input  type="button" value="Verificar" onclick="verificar()"> 
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; Vitor M.</p>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+
+        
+
+    </style>
+    
+</head>
+    
+<body>
+
+    <h1>DETRAN</h1>
+
+     Digite a velocidade: <input type = "number" name="txtvel" id="txtvel"> km/h  
+     <br>
+     <br>
+    <input type="button" value="Verificar" onclick="Clicar()">
+    <br>
+    <br>
+    <div id="res">Resultado</div>
+    <div id="alert"> </div>
+
+    <script>
+    
+    function Clicar (){
+    
+    var velo = document.querySelector ('input#txtvel')
+    var res = document.querySelector ('div#res')
+    var km = Number(velo.value)
+    res.innerHTML = ('A sua velocidade atual é ' + km + ' km/h')
+
+    if (km>60){
+        var bat = document.querySelector ('div#alert') 
+        bat.innerHTML = ('Você está acima da velocidade permitida, MULTADO!' + '<br>' )
+    } else {
+       var bat = document.querySelector ('div#alert') 
+       bat.innerHTML = ('Está dentro da velocidade permitida!' + '<br>')
+    }
+
+    }
+
+
+    </script>
+</body>
+</html>
